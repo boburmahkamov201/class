@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class car{
+public:
+    string brand;
+    string model;
+    int max_speed;
+    int year;
+public:
+    car(string b,string m,int s,int y){
+        brand = b;
+        model = m;
+        max_speed = s;
+        year = y;
+    }
+};
+int main (){
+    car car1("BMW","M5",250,2004);
+    cout<<"Brand = "<<car1.brand<<endl;
+    cout<<"Model = "<<car1.model<<endl;
+    cout<<"Max Speed = "<<car1.max_speed<<endl;
+    cout<<"Creating Year = "<<car1.year<<endl;
+    
+    return 0;
+    
+}
